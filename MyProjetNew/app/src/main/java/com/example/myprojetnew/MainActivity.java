@@ -2,6 +2,7 @@ package com.example.myprojetnew;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText mail,password;
-    Button login,register;
+    Button login,register,inscription;
     DBHelper DB = new DBHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         login = (Button) findViewById(R.id.button);
         register = (Button) findViewById(R.id.button2);
+        inscription = (Button)findViewById(R.id.button3);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Mot de passe incorecte", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+        inscription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent inscription = new Intent(MainActivity.this, Inscription.class);
+                startActivity(inscription);
             }
         });
     }
