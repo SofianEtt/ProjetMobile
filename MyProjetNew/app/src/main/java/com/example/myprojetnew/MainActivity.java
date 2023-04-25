@@ -1,5 +1,6 @@
 package com.example.myprojetnew;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,17 +10,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
-    EditText mail,password;
+    EditText mail,mdp;
     Button login,register,inscription;
     DBHelper DB = new DBHelper(this);
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mail = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        password = (EditText) findViewById(R.id.editTextNumberPassword);
-
+        mdp = (EditText) findViewById(R.id.editTextNumberPassword);
+        mAuth = FirebaseAuth.getInstance();
         login = (Button) findViewById(R.id.button);
         register = (Button) findViewById(R.id.button2);
         inscription = (Button)findViewById(R.id.button3);
@@ -27,40 +35,45 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mailString = mail.getText().toString();
-                String pass = password.getText().toString();
+                String email, password;
+                email = mail.getText().toString();
+                password = mdp.getText().toString();
+                mAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                } else {
+                                    // If sign in fails, display a message to the user.
 
-                if(mailString.equals("") || pass.equals("")) {
-                    Toast.makeText(MainActivity.this, "Adresse mail/Password invalide", Toast.LENGTH_SHORT).show();
-                }else{
-                    Boolean checkMail = DB.checkMail(mailString);
-                    if(checkMail == false){
-                        Boolean insert = DB.insertData(mailString,pass);
-                        if(insert == true){
-                            Toast.makeText(MainActivity.this, "Inscription réussite", Toast.LENGTH_SHORT).show();
-                        }
-                        else Toast.makeText(MainActivity.this, "Erreur lors de l'inscription", Toast.LENGTH_SHORT).show();
-                    }else{
-                        Toast.makeText(MainActivity.this, "Adresse mail déjà utilisée", Toast.LENGTH_SHORT).show();
-                    }
-                }
+                                    Toast.makeText(MainActivity.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
             }
         });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mailString = mail.getText().toString();
-                String pass = password.getText().toString();
-                if(DB.checkMail(mailString) == false){
-                    Toast.makeText(MainActivity.this, "Adresse mail inexistante", Toast.LENGTH_SHORT).show();
-                }else{
-                    if(DB.checkUser(mailString,pass) == true){
-                        Toast.makeText(MainActivity.this, "Connexion réussite", Toast.LENGTH_SHORT).show();
-                    }else{
-                        Toast.makeText(MainActivity.this, "Mot de passe incorecte", Toast.LENGTH_SHORT).show();
+                String email, password;
+                email = mail.getText().toString();
+                password = mdp.getText().toString();
+                mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(MainActivity.this, "Login successful.",
+                                    Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }
+                });
             }
         });
         inscription.setOnClickListener(new View.OnClickListener() {
