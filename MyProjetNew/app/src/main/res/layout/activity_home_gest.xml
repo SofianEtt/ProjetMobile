@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeGest">
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:background="#DD5363"
+        android:gravity="center"
+        android:text="Menu Gestionnaire"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GestionInscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="132dp"
+        android:background="#009688"
+        android:text="Gestion des Inscriptions"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <Button
+        android:id="@+id/Statistiques"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4B5BB6"
+        android:text="Statistiques"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GestionInscriptions"
+        app:layout_constraintVertical_bias="0.134" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

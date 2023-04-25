@@ -16,7 +16,6 @@ public class Inscription extends AppCompatActivity {
         Button candidat = (Button) findViewById(R.id.candidat);
         Button employeur = (Button)findViewById(R.id.employeur);
         Button agence = (Button) findViewById(R.id.agence);
-
         candidat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,13 +26,15 @@ public class Inscription extends AppCompatActivity {
         employeur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intentEmployeur = new Intent(Inscription.this, InscriptionEmpAg.class);
+                startActivity(intentEmployeur);
             }
         });
         agence.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intentAgence = new Intent(Inscription.this, InscriptionEmpAg.class);
+                startActivity(intentAgence);
             }
         });
     }

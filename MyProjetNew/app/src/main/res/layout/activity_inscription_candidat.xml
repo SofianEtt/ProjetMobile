@@ -7,4 +7,170 @@
     tools:context=".InscriptionCandidat">
 
 
+    <TextView
+        android:id="@+id/textConfirmPWC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Confirmer le mot de passe :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editPWC"
+        app:layout_constraintTop_toBottomOf="@+id/editPWC" />
+
+    <TextView
+        android:id="@+id/textPWC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Mot de passe :"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editCityC"
+        app:layout_constraintStart_toStartOf="@+id/editCityC"
+        app:layout_constraintTop_toBottomOf="@+id/textCityC" />
+
+    <TextView
+        android:id="@+id/textCityC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Ville :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textPhoneC"
+        app:layout_constraintTop_toBottomOf="@+id/textPhoneC" />
+
+    <TextView
+        android:id="@+id/textMailC"
+        android:layout_width="63dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="62dp"
+        android:text="Mail :"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCityC"
+        app:layout_constraintEnd_toEndOf="@+id/textPhoneC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editFNameC" />
+
+    <TextView
+        android:id="@+id/textFNameC"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="18dp"
+        android:text="Prenom :"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textMailC"
+        app:layout_constraintEnd_toEndOf="@+id/textPWC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameC" />
+
+    <EditText
+        android:id="@+id/editConfirmPWC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textConfirmPWC"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmPWC" />
+
+    <EditText
+        android:id="@+id/editPWC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textPWC"
+        app:layout_constraintTop_toBottomOf="@+id/textPWC" />
+
+    <EditText
+        android:id="@+id/editFNameC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editMailC"
+        app:layout_constraintStart_toEndOf="@+id/textFNameC" />
+
+    <EditText
+        android:id="@+id/editMailC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editPhoneC"
+        app:layout_constraintEnd_toEndOf="@+id/editFNameC" />
+
+    <EditText
+        android:id="@+id/editNameC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editFNameC"
+        app:layout_constraintStart_toEndOf="@+id/textNameC" />
+
+    <EditText
+        android:id="@+id/editPhoneC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPhoneC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="4dp"
+        android:text="Téléphone :"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editCityC"
+        app:layout_constraintEnd_toStartOf="@+id/editPhoneC" />
+
+    <EditText
+        android:id="@+id/editCityC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textCityC"
+        app:layout_constraintTop_toBottomOf="@+id/editPhoneC" />
+
+    <TextView
+        android:id="@+id/textNameC"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:text="Nom :"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editNameC"
+        app:layout_constraintEnd_toStartOf="@+id/editCityC"
+        app:layout_constraintStart_toStartOf="@+id/textPhoneC" />
+
+    <Button
+        android:id="@+id/registerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Inscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editConfirmPWC" />
 </androidx.constraintlayout.widget.ConstraintLayout>
