@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Paul Emploi</string>
+    <string name="don_t_have_an_account_sign_up_here"><u>Create new Account</u></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account_sign_up_hereus"><u>SignIn as a User</u></string>
+    <string name="already_registered_login_here">Already Registered? <u>Login Here</u></string>
+    <string name="home">HOME</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="phone">Phone</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="okay">Okay</string>
+    <string name="form_schedule">FORM SCHEDULE</string>
+    <string name="please_fill_the_info_below_to_schedule_a_visit">Please fill the info below to schedule a visit</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="post_gig">POST GIG</string>
+    <string name="enter_details_to_post_your_gig">Enter details to post your GIG</string>
+    <string name="location_of_availability">Location of Availability</string>
+    <string name="insert_image">Insert Image</string>
+    <string name="post">POST</string>
+    <string name="let_us_help_you_get_best_show">Let us help you get best show</string>
+    <string name="password">Password</string>
+    <string name="register">REGISTER</string>
+    <string name="schedule_requests">Schedule Requests</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="as_a_user">As a User</string>
+    <string name="login">LOGIN</string>
+    <string name="signin_as_dj">SignIn as DJ</string>
+    <string name="as_a_dj">As Admin</string>
+    <string name="remove_gig">REMOVE GIG</string>
+    <string name="send_email">Send Email</string>
+    <string name="call_user">Call User</string>
+    <string name="remove">REMOVE</string>
+    <string name="as" translatable="false">As</string>
+    <string name="register_instead" translatable="false"><u>Register Instead</u></string>
+    <string name="login_instead" translatable="false"><u>Login Instead</u></string>
+    <string name="schedules">Schedules</string>
+    <string name="ads">ADS</string>
+    <string name="companies">Companies</string>
+    <string name="admin_home">Admin Home</string>
+    <string name="search">Search</string>
+    <string name="my_account">My Account</string>
+    <string name="location">Location</string>
+    <string name="edit">EDIT</string>
+    <string name="post_ad">POST AD</string>
+    <string name="enter_details_to_post_your_ad">Enter details to post your Ad</string>
+    <string name="title">Title</string>
+    <string name="company_registration_id">Company Registration ID</string>
+    <string name="education">Education</string>
+    <string name="timing">Timing</string>
+    <string name="skills">Skills</string>
+    <string name="salary">Salary</string>
+    <string name="job_description">Job Description</string>
+    <string name="candidate">Candidate</string>
+    <string name="recruiter">Recruiter</string>
+    <string name="manager">Manager</string>
+    <string name="company_name">Company Name</string>
+    <string name="number_of_employees">Number Of employees</string>
+    <string name="company_location">Company Location</string>
+    <string name="company_registration_number">Company Registration Number</string>
+    <string name="schedule_interview">SCHEDULE INTERVIEW</string>
+    <string name="please_fill_the_info_below_to_schedule_interview">Please fill the info below to schedule Interview</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="experience">Experience</string>
+    <string name="admin">Admin</string>
+    <string name="terms_amp_conditions"><![CDATA[TERMS & CONDITIONS]]></string>
+    <string name="accept">ACCEPT</string>
+    <string name="termsAccept">Terms &amp; Cond.</string>
+    <string name="shareUs">Share Us</string>
+    <string name="rateUs">Rate Us</string>
+    <string name="applies">My Applies</string>
+    <string name="logOut">Logout</string>
+
+    <string-array name="gender">
+
+        <item>Gender
+        </item>
+        <item>Male</item>
+        <item>FeMale</item>
+    </string-array>
+    <string-array name="lang">
+        <item>Select Language</item>
+        <item>English</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="register">
+        <item>Register as a
+        </item>
+        <item>User</item>
+        <item>DJ</item>
+    </string-array>
+
+
+    <string name="map_key" translatable="false">AIzaSyD10tstFd5tauP2_PPw56CjaMWVEHskqgg</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "295934712845",
+    "project_id": "recruitment-management-s-cd04f",
+    "storage_bucket": "recruitment-management-s-cd04f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295934712845:android:c5b2cca630567e5f9c8944",
+        "android_client_info": {
+          "package_name": "com.androiddev.recruitmentsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295934712845-njqb5f5fd1pfrqp5um4nvkkk2ksak235.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAC61oYNmV76WrW6mASaFUjHNLMrSkTaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295934712845-njqb5f5fd1pfrqp5um4nvkkk2ksak235.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="40dp"
+    tools:context=".Init.SigninInitActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/theme_color"
+        android:fontFamily="@font/lato_black"
+        android:textSize="37sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/as"
+        android:textColor="@color/grey_40"
+        android:textSize="25sp" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/candidate_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/candidate"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/recruiter_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recruiter"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/manager_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manager"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/admin_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/register_instead_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_instead"
+        android:layout_gravity="end"
+        android:layout_margin="15dp"
+        android:textColor="@color/theme_color"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        />
+
+    <Spinner
+        android:id="@+id/language_sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_bg_outlined"
+        android:visibility="visible" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    tools:context=".Recruiter.RecruiterMyAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/my_account"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/theme_color"
+        android:textSize="37sp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/name"
+        android:minHeight="48dp"
+        android:textColor="@color/grey_80" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/location"
+        android:minHeight="48dp"
+        android:textColor="@color/grey_80" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phone_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="@color/grey_80" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gender_sp"/>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:id="@+id/edit_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_ic"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="30dp"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:background="@drawable/button_bg"
+        android:id="@+id/okay_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/okay"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

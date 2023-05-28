@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".Recruiter.PostJobActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:visibility="gone"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/post_ad"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/theme_color"
+            android:textSize="22sp" />
+
+
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/title_box"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="@string/title"
+                android:textColor="@color/grey_80" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:hint="@string/location"
+                android:id="@+id/location_box"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:inputType="number"
+                android:hint="@string/company_registration_id"
+                android:id="@+id/cregisPost_box"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:hint="@string/phone"
+                android:id="@+id/phone_box"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:hint="@string/education"
+                android:id="@+id/education_box"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey_80"
+                android:hint="@string/timing"
+                android:id="@+id/timing_box"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:hint="@string/skills"
+                android:id="@+id/skills_box"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/grey_80"
+                android:hint="@string/salary"
+                android:id="@+id/salary_box"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:textColor="@color/grey_80"
+                android:inputType="text"
+                android:hint="@string/job_description"
+                android:id="@+id/descr_box"/>
+
+
+            <FrameLayout
+                android:id="@+id/addImage_layout"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#E4E4E4">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:elevation="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/post_ic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insert Image"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:id="@+id/crtImage_iv"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </FrameLayout>
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                android:id="@+id/progressbar"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_bg"
+                android:id="@+id/post_btn">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lato_black"
+                    android:textSize="18sp"
+                    />
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Paul Emploi</string>
+    <string name="don_t_have_an_account_sign_up_here"><u>Créer un nouveau compte</u></string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="don_t_have_an_account_sign_up_hereus"><u>Se connecter en tant que propriétaire</u></string>
+    <string name="already_registered_login_here">Déjà inscrit? <u>Connexion ici</u></string>
+    <string name="home">ACCUEIL</string>
+    <string name="reset_password">Réinitialiser le mot de passe</string>
+    <string name="phone">Téléphone</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="okay">OK</string>
+    <string name="form_schedule">Horaire de saisie du formulaire</string>
+    <string name="please_fill_the_info_below_to_schedule_interview">Veuillez remplir les informations nécessaire pour plannifier l\'entretien</string>
+    <string name="name">Nom</string>
+    <string name="email">Mail</string>
+    <string name="sign_up">S\'INSCRIRE</string>
+    <string name="date">Date</string>
+    <string name="time">Heure</string>
+    <string name="confirm">CONFIRMER</string>
+    <string name="post_gig">POSTER GIG</string>
+    <string name="enter_details_to_post_your_gig">Entrez les détails pour publier votre GIG</string>
+    <string name="location_of_availability">Emplacement de disponibilité</string>
+    <string name="insert_image">Insérer une image</string>
+    <string name="post">POSTER</string>
+    <string name="let_us_help_you_get_best_show">Laissez-nous vous aider à obtenir le meilleur spectacle</string>
+    <string name="password">Mot de passe</string>
+    <string name="register">ENREGISTRER</string>
+    <string name="schedule_requests">Demandes de planification</string>
+    <string name="sign_in">CONNEXION</string>
+    <string name="as_a_user">En tant qu\'utilisateur</string>
+    <string name="login">CONNEXION</string>
+    <string name="signin_as_dj">Se connecter en tant que administrateur</string>
+    <string name="as_a_dj">En tant qu\'administrateur</string>
+    <string name="remove_gig">SUPPRIMER LE GIG</string>
+    <string name="send_email">Envoyer un e-mail</string>
+    <string name="call_user">Appeler l\'utilisateur</string>
+    <string name="remove">SUPPRIMER</string>
+    <string name="as" translatable="false">Comme</string>
+    <string name="register_instead" translatable="false"><u>Inscrivez-vous plutôt</u></string>
+    <string name="login_instead" translatable="false"><u>Se connecter plutôt</u></string>
+    <string name="schedules">Horaires</string>
+    <string name="ads">ADS</string>
+    <string name="companies">Entreprises</string>
+    <string name="admin_home">Accueil administrateur</string>
+    <string name="search">Rechercher</string>
+    <string name="my_account">Mon compte</string>
+    <string name="location">Emplacement</string>
+    <string name="edit">MODIFIER</string>
+    <string name="post_ad">PUBLIER L\'ANNONCE</string>
+    <string name="enter_details_to_post_your_ad">Entrez les informations nécessaire pour la publication de votre annonce</string>
+    <string name="title">Titre</string>
+    <string name="company_registration_id">ID d\'enregistrement de la société</string>
+    <string name="education">Formation</string>
+    <string name="timing">Temps</string>
+    <string name="skills">Compétences</string>
+    <string name="salary">Salaire</string>
+    <string name="job_description">Description du poste</string>
+    <string name="candidate">Candidat</string>
+    <string name="recruiter">Recruteur</string>
+    <string name="manager">Gestionnaire</string>
+    <string name="company_name">Nom de l\'entreprise</string>
+    <string name="number_of_employees">Nombre d\'employés</string>
+    <string name="company_location">Emplacement de l\'entreprise</string>
+    <string name="company_registration_number">Numéro d\'enregistrement de la société</string>
+    <string name="schedule_interview">PLANIFIER L\'ENTRETIEN</string>
+    <string name="please_fill_the_info_below_to_schedule_a_visit">Veuillez saisir les informations nécessaire à la programmation d\'un entretien</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="nationality">Nationalité</string>
+    <string name="date_of_birth">Date de naissance</string>
+    <string name="experience">Expérience</string>
+    <string name="admin">Administrateur</string>
+    <string name="terms_amp_conditions"><![CDATA[TERMS & CONDITIONS]]></string>
+    <string name="accept">ACCEPTER</string>
+    <string name="termsAccept">Termes &amp; Conditions</string>
+    <string name="shareUs">Partagez</string>
+    <string name="rateUs">Notez nous</string>
+    <string name="applies">Mes candidatures</string>
+    <string name="logOut">Se déconnecter</string>
+
+    <string-array name="gender">
+
+        <item>Genre
+        </item>
+        <item>Homme</item>
+        <item>Femme</item>
+    </string-array>
+    <string-array name="lang">
+        <item>Selectionner une langue</item>
+        <item>Anglais</item>
+        <item>Français</item>
+    </string-array>
+
+
+
+
+
+</resources>
