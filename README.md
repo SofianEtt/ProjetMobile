@@ -40,8 +40,9 @@ Pour plus d'informations sur le projet, consultez les documents suivants disponi
 
 ## 👥 Auteurs
 
-- **Sofian Ettayeb** – Développeur principal
-- **Collaborateurs** : [Ajouter les noms des collaborateurs ici]
+- **Sofian Ettahiri**
+- **Rym Zeggar**
+- **Youcef Labiad** 
 
 ## 📬 Contact
 
